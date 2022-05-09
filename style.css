@@ -1,0 +1,758 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style-type: none;
+    display: flex;
+}
+
+.header{
+    height: 962px;
+    background: url(header-background.png) center no-repeat;
+    background-size: cover;
+    margin: auto;
+    color: white;
+    position: relative;
+    padding: 20px 0 0 0;
+}
+
+.header .container{
+    position: relative;
+    height: 100%;
+}
+
+.header-nav{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    /* display: flex;
+    justify-content: space-between; */
+
+    font-size: 33.33px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo{
+    font-weight: bold;
+    font-size: 33.33px;
+    z-index: 1;
+}
+
+.header-inner{
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100% - 100px);
+    z-index: 2;
+}
+
+.container{
+    max-width: 1400px !important;
+    width: 100% !important;
+    margin: auto !important;   
+}
+
+.govno{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-inner-text{
+    font-size: 125px;
+    z-index: 2;
+    max-width: 460px;
+    width: 100%;
+
+}
+
+.header-inner-button button{
+    position: relative;
+    top: 75px;
+    font-size: 37.5px;
+    width: 330px;
+    height: 80px;
+    background-color: #ffba00;
+    border: 4px solid white;
+    color: white;
+    padding: 0 0 0 30px;
+    transition: .2s;
+}
+
+.header-inner-button button:hover{
+    background-color: #c49000;
+}
+
+.header-nav ul li:not(:last-child){
+    margin: 0 80px 0 0;
+}
+
+/* .logo-design{
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    height: 50px;
+    background: #ffba00;
+    left: -900px;
+    z-index: -1;
+/* } */
+
+#header-logo-design{
+    position: absolute;
+    background: #ffba00;
+    height: 70px;
+}
+
+.about{
+    height: 600px;
+    width: 100%;
+    background: url(pizza.png) no-repeat;
+    background-position: right center;
+    background-color: #242424;
+}
+
+.about-design{
+    max-width: 840px;
+    width: 100%;
+    height: 180px;
+    background-color: hsl(44, 100%, 50%);
+    position: absolute;
+    left: 13%;
+}
+
+.about .text{
+    position: absolute;
+    left: 25%;
+    color: white;
+    font-size: 41.76px;
+    width: 690px;
+    line-height: 100px;
+    z-index: 1;
+}
+
+.about .container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.text2{
+    font-size: 76px;
+    position: absolute;
+    left: -280px;
+    top: 220px;
+    transform: rotate(-90deg);
+}
+
+.info{
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.info .container{
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards{
+    margin: 40px 0;
+    width: 300px;
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 35.17px;
+    color: #ffba00;
+    margin: 0 0 30px 0;
+}
+
+.card-text{
+    font-size: 19.62px;
+}
+
+.header-design{
+    width: 100%;
+    height: 235px;
+    background-color: #ffba00;
+    position: relative;
+    bottom: 90px;
+}
+
+.price{
+    position: relative;
+    height: 1200px;
+    background: url(backgound-price.png) center no-repeat;
+    background-size: cover;
+    padding: 110px 0 0 0;
+    box-sizing: content-box !important;
+}
+
+.price-logo{
+    font-size: 41.67px;
+    font-weight: bold;
+    color: #ffba00;
+    width: 1px;
+    margin: auto;
+}
+
+.price-title{
+    margin: 60px 0 0 0;
+    height: 130px;
+    position: relative;
+    width: 100%;
+}
+
+.price-title-text{
+    text-align: center;
+    font-size: 47px;
+    color:hsl(44, 100%, 50%);
+}
+
+.price-title-design{
+    position: absolute;
+    top: -10px;
+    right: 0;
+    height: 100%;
+    border: 2px solid white;
+    width: 81.94%;
+    max-width: 1180px;
+    box-sizing: border-box;
+}
+
+.price .container, .price-govno{
+    box-sizing: content-box !important;
+    padding: 0;
+}
+
+.price-enum{
+    position: relative;
+    display: flex;
+    font-size: 33.33px;
+    color: white;
+    width: 1035px;
+    height: 410px;
+    background-color: #ffba00;
+    margin: 90px 0 0 0;
+}
+
+.prices-inner{
+    max-width: 760px;
+    width: 100%;
+}
+
+.price-inner{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 0 60px;
+}
+
+.price-count{
+    z-index: 1;
+}
+
+.price-enum-design{
+    z-index: 0;
+    position: absolute;
+    right: 255px;
+    top: 50px;
+    width: 50px;
+    height: 550px;
+    background: rgba(255, 222, 132, 0.5);
+}
+
+.price-govno{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.price-description{
+    position: absolute;
+    bottom: 40px;
+    margin: auto;
+    max-width: 945px;
+    width: 100%;
+    height: 140px;
+    border: 2px solid white;
+    left: 0;
+    right: 0;
+}
+
+.price-desc-text{
+    display: flex;
+    height: 100%;
+    font-size: 25px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -120px;
+}
+
+.nav{
+    /* height: 410px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  #242424;
+}
+
+.nav-inner{
+    padding: 30px 0;
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+}
+
+.nav-title{
+    color: #ffba00;
+    font-size: 41.76px;
+}
+
+.nav-text{
+    color: white;
+    font-size: 18.75px;
+    margin: 45px 0;
+}
+
+.nav-links{
+    width: 100%;
+    max-width: 510px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+    font-size: 16.67px;
+    flex-wrap: wrap;
+}
+
+.form{
+    background: url(form-image.png) center no-repeat;
+    background-size: cover;
+    font-size: 41.76px;
+    color: white;
+    padding: 100px 100px 0 0;
+}
+
+.form .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.form-card{
+    margin: 100px 0;
+    width: 540px;
+    /* height: 630px; */
+    display: flex;
+    flex-direction: column;
+    background-color: #ffba00;
+    padding: 50px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.form-text{
+    font-size: 50px;
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.form-promise{
+    font-size: 41.56px;
+    text-transform: none;
+}
+
+.form-price{
+    align-self: flex-end;
+}
+
+.form-apply a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    width: 480px;
+    padding: 50px 30px 30px 30px;
+    box-sizing: border-box;
+    height: 115px;
+    background-color: #ffba00;
+}
+
+.gallery{
+    box-sizing: content-box !important;
+    /* height: 1260px; */
+    background-color: #242424;
+}
+
+.footer{
+    padding: 30px 0;
+    background-color: #483500;
+}
+
+/* .footer-about{
+    width: 550px;
+} */
+
+.footer{
+    color: white;
+    font-weight: bold;
+    font-size: 20.83px;
+}
+
+.footer .container{
+    box-sizing: content-box !important;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.idinahui{
+    width: 100%;
+    display: flex;
+}
+
+.footer-about-text{
+    width: 100%;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.footer-navs{
+    width: 100%;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav-links ul{
+    display: block;
+}
+
+.footer-nav-title{
+    margin: 0 0 40px 0;
+}
+
+.footer-about-title{
+    margin: 0 0 40px 0;
+}
+
+.gallery{
+    padding: 75px 0 0 0;
+    position: relative;
+}
+
+.gallery .container{
+    position: relative;
+}
+
+.gallery-design{
+    position: absolute;
+    width: 251px;
+    height: 100%;
+    background-color: #ffba00;
+    z-index: 0;
+    top: 0;
+    left: 10vw;
+}
+
+.gallery-title{
+    position: relative;
+    z-index: 2;
+    margin: 0 0 50px 0;
+    font-size: 41.76px;
+    color: #ffba00;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.gallery-imgs{
+    display: flex;
+    justify-content: space-between;
+    max-height: 475px;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    /* flex-wrap: nowrap; */
+}
+.carousel-item img{
+    /* height: 450px; */
+    width: auto;
+    max-height: 450px;
+    height: 100%;
+}
+.carousel-item.active{
+    z-index: 2;
+    display: flex !important;
+    justify-content: center;
+}
+.carousel-item.carousel-item-start{
+    z-index: 2;
+    display: flex !important;
+    justify-content: center;
+}
+.carousel-item.carousel-item-end{
+    z-index: 2;
+    display: flex !important;
+    justify-content: center;
+}
+.carousel-control-prev{
+    z-index: 3 !important;
+}
+.carousel-control-next{
+    z-index: 3 !important;
+}
+
+.visit-title{
+    color: white;
+    font-size: 41.76px;
+    text-align: center;
+    margin: 25px 0 0 0;
+}
+
+.gallery-visit{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.visit-about-text{
+    max-width: 410px;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+}
+
+.visit-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.visit-links-title{
+    margin: 0 0 10px 0;
+    font-size: 25px;
+    color: white;
+}
+
+.visit-url-text{
+    margin: 0;
+}
+
+.socials-media{
+    display: flex;
+}
+
+.socials-media div:not(:last-child){
+    margin: 0 30px 0 0;
+}
+
+.visit-inner{
+    box-sizing: content-box !important;
+    display: flex;
+    margin: 100px 0 0 0;
+    margin: 0 0 100px 0;
+}
+
+.visit-url-link a{
+    font-size: 30px;
+}
+
+.visit-url-link{
+    text-align: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 1420px) {
+    .gallery-imgs{
+        flex-wrap: wrap;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 1000px){
+    .price-title-design{
+        width: 100%;
+        left: 0;
+    }
+    .form{
+        padding: 0;
+        font-size: 10vw;
+    }
+    .form .container{
+        padding: 0;
+        align-items: center;
+    }
+    .form-card{
+        width: 100%;
+    }
+    .form-apply a{
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 30px 0;
+        height: auto;
+    }
+    .form-apply{
+        width: 100%;
+    }
+    .form-promise{
+        font-size: 10vw;
+    }
+    .price-govno{
+        width: 100%;
+    }
+    .price-logo{
+        width: 100%;
+        text-align: center;
+    }
+    .about .text{
+        width: 100%;
+        left: 0;
+        font-size: 4.3vw;
+        padding: 10px;
+        line-height: 10vw;
+    }
+    .price-enum{
+        width: 100%;
+        font-size: 3vw;
+    }
+    .price-inner{
+        margin: 60px 10px;
+    }
+    .price-enum-design{
+        display: none;
+    }
+    .price-desc-text{
+        width: 100%;
+        position: static;
+    }
+    .text2{
+        font-size: 13vw;
+        text-align: center;
+        left: 0;
+        position: relative;
+        top: -15px;
+        transform: rotate(0deg);
+    }
+    .info .container{
+        display: block;
+        margin: 30px 0;
+        margin: auto;
+    }
+    .cards{
+        width: 100%;
+    }
+    .about-design{
+        left: 0;
+        width: 100%;
+    }
+    .header-inner{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header-inner-button button, .header-inner-button{
+        width: 100%;
+        padding: 0;
+    }
+    .header-inner-text{
+        text-align: center;
+        font-size: 15vw;
+    }
+    /* .footer-about-text{
+        font-size: 2vw;
+    } */
+    .visit-inner{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    /* .visit-about-text, .visit-links div{
+        font-size: 3vw;
+    } */
+    .socials-media img{
+        width: 10vw;
+    }
+}
+
+@media (max-width: 750px){
+    .price-enum{
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 600px){
+    .price-enum{
+        font-size: 5vw;
+    }
+    .footer-nav{
+        flex-wrap: wrap;
+    }
+    /* .footer-about-text{
+        font-size: 4vw;
+    } */
+    .idinahui{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 315px){
+    .gallery-design{
+        /* width: 100%;
+        left: 0; */
+        display: none;
+    }
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.nav-link{
+    border-radius: 10px;
+    color: white !important;
+    transition: .2s;
+}
+
+.nav-link:hover{
+    background-color: #ffffff38;
+}
+
+.navbar-collapse.collapsing{
+    border-radius: 10px;
+    z-index: 3;
+    background-color: #242424;
+}
+
+.navbar-collapse.show{
+    border-radius: 10px;
+    z-index: 3;
+    background-color: #242424;
+}
+
+.visit-url a{
+    color:hsl(44, 100%, 50%);
+    text-decoration: none;
+    transition: .2s;
+}
